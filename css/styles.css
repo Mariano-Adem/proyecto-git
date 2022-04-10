@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffbaba;
+    font-size: 1rem;
+    margin: 10px;
+    height: 0 auto;
+}
+
+                        /* ACA VA TODO CON RELACION A GRIDS! */
+.contenedor__grid{
+   
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:auto auto auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    align-items: center;
+}                       
+                        /*--GRID AREAS */
+
+header{ 
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+            /* FINAL DE CODIGO DE GRIDS! */
+
+
+                        /* ACA VA TODO LO DEL HEADER */
+
+#header {
+   
+    color: #146464;
+    background-color: #ffcd82 ;
+    margin-bottom: 1rem;
+    border: solid; color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.nav__list{
+    list-style: none;   
+    display: none;
+    
+}
+
+
+.nav__link{
+    text-decoration: none;
+}
+
+.logoHeader{
+    text-align:center;
+    padding: 0.5rem;
+    border: none;
+    margin: 2rem;
+}
+.boton{
+    text-decoration: none;
+    padding: 0.5rem;
+    border: solid black;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff2df    
+}
+
+.rojoLin{
+    color: #ff5a46;
+}
+
+/* main index*/
+#section1 {
+    background-color: #146464;
+    padding:1.5rem;
+    border: solid; color: black;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.img__section1{
+    width:400px ;
+}
+
+#section2{
+    background-color: #ffcd82;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: solid; color: black
+    
+}
+#section3{
+    background-color: #146464;
+    padding: 1.5rem;
+    border: solid; color: black;
+    margin: 1.5rem;
+}
+.div1Section3{
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    margin: 1rem;
+}
+.textoNegro{
+    color: black;
+}
+.contenedor__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div3Section3{
+    text-align: center;
+    text-decoration: none;
+}
+
+     /*main Servicios*/
+.s1servicios{
+    margin: 0.5rem;
+    background-color: #146464;
+    border: solid black;
+}     
+.texto{
+    text-align: center;
+    padding: 0.5rem;
+}
+.textoBlanco{
+    color: white;
+  
+}
+.sec1Servicios{
+    background-color: #ffcd82;
+    justify-content: space-between;
+    align-items: center;
+    border: solid; color: black;
+    padding: 1.5rem;
+    margin: 0.8rem;
+    display:flex;
+    flex-direction: column;
+
+}    
+.sec1Servicios img{
+ width: 80%;
+}
+.lista{
+    list-style: none;
+}
+
+.sec2Servicios{
+    background-color: #146464;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+    border: solid; color: black;
+    margin: 0.8rem;
+    display:flex;
+    flex-direction: column;
+}
+.naranjaBebeLin{
+    color: #ffcd82;
+}
+
+#procesoDeTrabajo{
+    padding: 1rem;
+    border: dashed #ff5a46;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.iconos{
+    width: 5rem;
+}
+.proceso{
+    padding: 1rem;
+    border: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+     /* footer */
+#footer{
+    
+    display: flex;
+    background-color: #fff2df;
+    color: #146464;
+    justify-content:space-around;
+    justify-items: center;
+}
+
+#footer .centroFooter{
+    text-align: center;
+}
+.redes{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;  
+   
+}
+.logo__redes{
+    margin: 0.3rem;
+}
+
+                                   /* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+   /* header */
+    .nav__list{
+       display: flex;
+   }   
+   
+   #header .fa{
+     display:none;
+  
+ }
+   .div1Section2{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   #procesoDeTrabajo{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+
+   
+   
+ 
+
+}    
+
+@media screen and (min-width: 1024px) {
+    .contenedor__img{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+    .contenedor__img img{
+        padding: 0.5rem;
+
+    }
+    
+ }    
